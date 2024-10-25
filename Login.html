@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="Login.css">
+    <script src="Login.js" defer></script>
+</head>
+<body class="abc">
+    <form onsubmit="handleLogin(event)">
+        <fieldset id="fieldsetBox">
+            <div id="heading">
+                <h2>
+                    <b>Login Your Account</b>
+                </h2>
+            </div>
+            <div class="textUserid">
+                <input type="text" id="userid" name="userid" autofocus placeholder="Enter UserId" required>
+            </div>
+            <div class="textPassword">    
+                <input type="password" id="password" name="password" placeholder="Enter password" required>
+            </div>    
+            <div class="buttonSubmit">
+                <input type="submit" value="Login">
+            </div>
+            <div id="errorMessage"></div>
+            <div id="forgotPassword">
+                <a href="#" target="_blank">Forgot Password?</a>
+            </div>
+            <div id="privacy">
+                <p>
+                    <b>Crackoss (Global Digital Pvt. Ltd.)</b>
+                    <a href="#" target="_blank">Privacy Policy</a><br>
+                </p>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Dashboard.css">
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar-scheduler@6.1.15/index.global.min.js'></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="menu-containar">
+        <div class="menu-item">
+            <button class="button" type="button" aria-label="Overview">
+            Overview
+            </button>
+        </div>
+        <div class="menu-item">
+            <button class="button" type="button" aria-label="Overview">
+            My leave
+            </button>
+        </div>
+        <div class="menu-item">
+            <button class="button" type="button" aria-label="Overview">
+            My Attendance
+            </button>
+        </div>
+        <div class="menu-item">
+            <button class="button" type="button" aria-label="Overview">
+            My task management
+            </button>
+        </div>
+        <div class="menu-item">
+            <button class="button" type="button" aria-label="Overview">
+            My performance
+            </button>
+        </div>
+        <div class="menu-item">
+            <button class="button" type="button" aria-label="Overview">
+            My okr
+            </button>
+        </div>
+        <div class="menu-item">
+            <button class="button" type="button" aria-label="Overview">
+            People
+            </button>
+        </div>
+        <div class="menu-item">
+            <button class="button" type="button" aria-label="Overview">
+            My calender
+            </button>
+        </div>
+        <div class="menu-item">
+            <button class="button" type="button" aria-label="Overview">
+            Alerts
+            </button>
+        </div>
+        <div class="menu-item">
+            <button class="button" type="button" aria-label="Overview">
+            My exit
+            </button>
+        </div>
+    </div> 
+    <div id="bar">
+        <canvas id="myBarChart"></canvas>
+    </div>
+    <div id="calender">  
+    </div>
+    <div id="AttendanceTime">
+            <div class="label-container">
+                <label><b>Time & Attendance</b></label>
+                
+            </div>
+            <div class="timer-container">
+                <span id="timer">00:00:00</span>
+                <p class="datetime"></p>
+            </div>
+                <input type="button" value="Clock in" onclick="startTimer()">
+            <div id="Clock-in-time">
+                <p>Clock In Time<span class="clock-time"></span></p>
+            </div>    
+            <div id="Period">
+                <P for="periodSelect">Period:
+                    <select id="periodSelect">
+                        <option value="last7days">Last 7 Day(s)</option>
+                        <option value="last15days">Last 15 Day(s)</option>
+                        <option value="last30days">Last 30 Day(s)</option>
+                    </select>
+                </P>
+            </div>
+            <div class="Average">
+                <p>Average Working Hours <span class="Averagetimer">00:00</span></p>
+            </div>
+            <div class="Average">
+                <p>Average Break Duration <span class="Averagetimer">00:00</span></p>
+            </div>
+        
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="Dashboard.js"></script>
+</body>
+</html>

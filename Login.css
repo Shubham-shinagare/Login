@@ -1,0 +1,131 @@
+/*.textUserid{
+    font-style: normal;
+    padding-top: 25px;
+    padding-left: 800px;
+}
+
+.textPassword{
+    font-style: normal;
+    padding-top: 25px;
+    padding-left: 800px;
+}
+
+.buttonSubmit{
+    font-style: normal;
+    padding-top: 25px;
+    padding-left: 800px;
+}
+
+#fieldsetBox{
+    text-align: center;
+}*/
+
+#heading{
+ padding-left: 55px;
+}
+
+.abc {
+   background-image: url("login4.jpg"), url("login2.jpg");
+   background-repeat: no-repeat;
+   background-size: 50% 100%;
+   background-position: left , right;
+   height: 100vh;
+   width: 100vw;
+}
+
+
+#fieldsetBox {
+    position: absolute;
+    right: 150px;
+    top: 29px;
+    height: 450px;
+    width: 300px;
+    margin: 50px;
+    text-align: left;
+    padding: 20px;
+    border-style: outset;
+    border-color: rgb(218, 231, 199);
+    border-width: 5px;
+    
+}
+
+.textUserid, .textPassword, .buttonSubmit {
+    font-style: normal;
+    padding-top: 30px;
+}
+
+.textPassword{
+    font-style: normal;
+    padding-top: 25px;
+}
+
+.textUserid, .textPassword {
+    display: flex;
+    align-items: center;
+}
+
+.textUserid input, .textPassword input {
+    margin-left: 10px;
+    background :#e8f0fe;
+    width: 300px; /* Increase width */
+    height: 30px; /* Increase height */
+    padding: 10px; /* Add padding for better appearance */
+    font-size: 14px; /* Increase font size */
+}
+
+.buttonSubmit {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.buttonSubmit input{
+    padding: auto;
+    width: 300px;
+    height: 40px;
+    font-size: 14px;
+    background :#377bf0;
+}
+
+#userid, #password {
+    border-style: outset;
+    border-width: 3px;
+    border-color: rgb(156, 156, 240);
+    border-top-style: solid;
+    border-left-color: rgb(214, 199, 199);
+    border-top-color: rgb(214, 199, 199);
+}
+
+#forgotPassword{
+  padding-top: 30px;
+  padding-left: 110px;
+  text-decoration: none;
+  color: #1061ec;
+}
+
+#forgotPassword a{
+    text-decoration: none;
+  }
+ 
+#privacy{
+    padding-left: 50px;
+}
+
+#privacy b{
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+#privacy a{
+    margin-bottom: 40px;
+    display: inline-block;
+    padding-left: 60px;
+    text-decoration: none;
+    color: darkblue;
+}
+
+#errorMessage {
+    color: red;
+    text-align: center; /* Center the error message */
+    display: none; /* Initially hidden */
+    margin-top: 20px;
+}
